@@ -1,0 +1,3 @@
+#!/bin/bash
+umount /home/user/ramdisk
+rm -r /home/user/ramdisk

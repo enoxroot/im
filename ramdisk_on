@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+if [ -e /home/user/ramdisk ]
+then
+    mount -t tmpfs -o size=2048M tmpfs /home/user/ramdisk
+else
+    mkdir /home/user/ramdisk
+    mount -t tmpfs -o size=2048M tmpfs /home/user/ramdisk
+fi

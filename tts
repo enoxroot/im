@@ -1,0 +1,4 @@
+#!/bin/bash
+pico2wave -w /tmp/1.wav "$1"
+mplayer /tmp/1.wav
+rm /tmp/1.wav
