@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# -*- coding: utf-8 -*-
+#
+
+vim - -esbnN -c "$1" -c 'w!/dev/stderr|q!' 2>&1 >/dev/null
+
+# vim           #  Start vim
+# -             #  Tell vim to read its input from stdin instead of from a file
+# -             #  Begin command line options to vim
+#     e         #  Start vim in ex-mode
+#     s         #  Silent mode
+#     b         #  Binary mode
+#     n         #  Don't create a swap file:  We don't want side effects
+#     N         #  Do not turn on vi compatibility mode (I needed this for plugins to work)
+# -c            #  As soon as vim is opened, run the following ex command
+#     w!/dev/stderr     #  Write the contents of Vim to /dev/stderr
+#     |                 #  Run another ex command
+#     q!                #  Quit without saving
+# 2>&1          #  Redirect stderr back to stdout    
+# >/dev/null    #  Redirect the nasty 'Vim: Reading from stdin...' message to /dev/null
+
