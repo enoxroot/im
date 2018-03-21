@@ -2,7 +2,7 @@
 
 ### also in use
 
-- data science toolbox (look foot the "data science at the command line" book) - header, body, cols
+- data science toolbox (look for the "data science at the command line" book) - header, body, cols
 - csvkit (csvclean, csvjoin, csvcut, csvgrep, etc.)
 - neovim and vim text editors
 - firefox and chromium browsers
@@ -20,7 +20,14 @@
 - concatinating ads.html, concatenating wordstat.html (cat, zsh)
 - parsing concatenated files to get search rate and ads count for each product (wordstat_parse.sh, ads_parse.sh, csvclean)
 - joining 3 lists - data from market, data with search rate and amount of paid ads avaliable (csvjoin -c name --left market_out.csv, wordstat_out.csv, ads_out.csv)
-- analising data with spreadshit software (libre, google)
-- manually searching for partners
+- manually analising data with spreadshit software (libre, google)
+- manually searching for partners, asking for price lists
+
+### additional things to say
+
+- business areas itself can be checked too (wordstat_get.sh, ads_get.sh)
+- everithing can be done in RAM to do not tire SSD drive (ramdisk_on, ramdisk_off)
+- tts is useful in scripts - at least for notification that job is done
+- you can use several computers. One for checking ads, one for checkeing wordstat, for example
 
 
