@@ -2,8 +2,16 @@
 # -*- coding: utf-8 -*-
 #
 
-list=$1
-opt=$2
+list=$2
+opt=$1
+
+case "$1" in
+	-g) opt='!g' ;;
+	-y) opt='!ya';;
+	-w) opt='!w' ;;
+	-t) opt='!gt';;
+	*) list=$1; opt='';;
+esac
 
 while read i
 do
